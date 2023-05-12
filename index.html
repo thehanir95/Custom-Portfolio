@@ -7,22 +7,21 @@
     <title>My Portfolio Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="loadingPortfolio()">
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="logo" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Thehani </span><br>Rathnayaka From Sri Lanka</h1>
+                <h1>Hi, I'm <span>Kevin </span><br>From England</h1>
             </div>
         </div>
     </div>
@@ -35,35 +34,135 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, 
-                        provident deserunt iure, eum dignissimos eligendi atque necessitatibus,
-                        quasi nulla blanditiis quas fugiat earum neque voluptatem cum soluta at. Pariatur, 
-                        quasi.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                    <p>Gutmann is a company specialized in mentoring and	development services in web environments, integrating Microsoft technology products	and	solutions.
+                        Created and maintained UI standards for 20+ websites, which included over 100 pages
+                        Worked cross-functionally with developers to implement new features and maintain site usability
+                        Re-designed the website and decreased the bounce rate by 40%
+                        Did some front end programming (HTML 5, CSS, JavaScript) to build actual web based prototype
+                        Improved load speed on mobile, from 14 to 6 seconds, by applying recommendations by Google Lighthouse
+                        App successfully connected a user base of over 150 babysitters and parents</p>
+                    <div class="sub-contents-btn-section">
+                        <button class="sub-contents-btn" onclick="goToSkills()">Skills</button>
+                        <button class="sub-contents-btn" onclick="goToExperience()">Experience</button>
+                        <button class="sub-contents-btn" onclick="goToEducation()">Education</button>
                     </div>
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>UI/UX</span><br>Design Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>2021 - Current</span><br>Associate Software Engineer</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>2021</span><br>PlatformOne PVT Limited</li>
-                        </ul>
+                    <div id="sub-contents">
+                        <div id="skills" class="tab-contents">
+                            <ul>
+                                <li><span>UI/UX</span><br>Design Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div id="experience" class="tab-contents">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Frontend Developer</li>
+                            </ul>
+                        </div>
+                        <div id="education" class="tab-contents">
+                            <ul>
+                                <li><span>2021</span><br>PlatformOne PVT Limited</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- -----------------services--------------------- -->
+    <div id="services">
+        <div class="service-container">
+            <div class="row">
+                <div>
+                    <h1 class="sub-title">Services</h1>
+                    <p class="service-para">Web development services involve everything related to building a web-based solution – whether it is a simple text page or a complex web application. Many people think of “web development” as just using a variety of programming languages to create the web app code and put everything together. 
+
+                        But web developers can help with many other tasks, from web design, content creation, scripting language, and SEO to web app maintenance, troubleshooting, and security measures. All to make sure the web app or another development project works exactly as it should.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1 class="sub-title">Contact</h1>
+                </div>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-item-para">
+                            <div class="icon"><img src="https://img.icons8.com/cute-clipart/64/000000/phone.png"/></div>
+                        <div class="contact-info">
+                            <h1>Phone</h1>
+                            <h2>+1-555-0100</h2>
+                        </div>
+                        </div> 
+                    </div>
+                    <div class="contact-item">
+                    <div class="contact-item-para">
+                        <div class="icon"><img src="https://img.icons8.com/cute-clipart/64/000000/email.png"/></div>
+                        <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>kevin@gmail.com</h2>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-para">
+                            <div class="icon"><img src="https://img.icons8.com/cute-clipart/64/000000/address.png"/></div>
+                        <div class="contact-info">
+                            <h1>Address</h1>
+                            <h2>7th Street, England</h2>
+                        </div>
+                        </div> 
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <!-- -----------------footer--------------------- -->
+    <div id="footer">
+        <div class="footer container">
+            <div class="brand"><h1><span>K</span>evin <span>F</span>ernando</h1></div>
+            <h2>Your Complete Web Solution</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png"/></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/instagram-new.png"/></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/behance.png"/></a>
+                </div>
+            </div>
+            <P>Copyright © 2020 Kevin. All rights reserved  </P>
+        </div>
+    </div>
 </body>
+
+<script>
+    function goToSkills () {
+        document.getElementById('skills').style.display = 'block';
+        document.getElementById('sub-contents').style.display = 'block';
+        document.getElementById('experience').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+    }
+    function goToExperience () {
+        document.getElementById('experience').style.display = 'block';
+        document.getElementById('sub-contents').style.display = 'block';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+    }
+    function goToEducation () {
+        document.getElementById('education').style.display = 'block';
+        document.getElementById('sub-contents').style.display = 'block';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('experience').style.display = 'none';
+    }
+    function loadingPortfolio() {
+        document.getElementById('sub-contents').style.display = 'none';
+    }
+</script>
 </html>

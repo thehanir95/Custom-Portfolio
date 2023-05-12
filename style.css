@@ -87,6 +87,8 @@ nav ul li a:hover::after{
     font-size: 60px;
     color: #fff;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 .tab-titles{
     display: flex;
@@ -119,4 +121,100 @@ nav ul li a:hover::after{
 .tab-contents ul li span{
     color: #b54769;
     font-size: 14px;
+}
+.sub-contents-btn-section {
+    display: flex;
+    justify-content: center;
+}
+.sub-contents-btn{
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+}
+/* -----------------services-------------- */
+#services{
+    padding: 205px 0;
+}
+.service-para {
+    text-align: center;
+}
+.service-container{
+    padding: 50px 50px;
+}
+/* -----------------contact-------------- */
+#contact{
+    padding: 100px 0;
+}
+.contact-items{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+.contact-item{
+    width: 33.33%;
+    margin: 10px;
+    background: yellow;
+    border: 1px white solid;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+.contact-item-para{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#contact .row{
+    justify-content: center;
+}
+.contact-info{
+    color: black;
+}
+/* -----------------footer-------------- */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#footer h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer .social-item img{
+    filter:grayscale(1);
+    transition: .3s ease filter;
+}
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+#footer p{
+    color: white;
+    font-size: 1.3rem;
 }
