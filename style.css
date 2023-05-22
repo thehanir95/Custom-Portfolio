@@ -218,3 +218,17 @@ nav ul li a:hover::after{
     color: white;
     font-size: 1.3rem;
 }
+
+/*media queries(Medium size)*/
+@media screen and (max-width: 1024px) {
+    .contact-items{
+        display: unset;
+    }
+    .contact-item{
+        width: unset;
+        justify-content: flex-start;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+ }
